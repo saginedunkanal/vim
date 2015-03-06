@@ -23,10 +23,10 @@ syntax on
 filetype plugin indent on
 
 " Show line numbers
-:set number
+set number
 
 " Enable to open a second file without having to close the current one
-:set hidden
+set hidden
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keyboard shortcuts
