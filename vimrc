@@ -2,6 +2,7 @@
 " Sections
 "   - General
 "   - Keyboard shortcuts
+"   - Automatically reload file when it was changed outside of Vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -36,9 +37,14 @@ filetype plugin indent on
 :nmap <C-s> :w<CR>
 :imap <C-s> <Esc>:w<CR>a
 
+
+" Use jj instead of Esc to enter normal mode because pressing Esc hurts the little finger
+" http://vim.wikia.com/wiki/Avoid_the_escape_key
+
+:imap jj <Esc>
+
 " Enabling the next line will show in the terminal that my .vimrc was loaded
 "echo "My .vimrc loaded"
-
 
 
 
