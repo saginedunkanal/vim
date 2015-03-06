@@ -28,6 +28,11 @@ set number
 " Enable to open a second file without having to close the current one
 set hidden
 
+" Enable Time Pope's vividchalk colorscheme
+" http://github.com/tpope/vim-vividchalk 
+colorscheme vividchalk
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keyboard shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
