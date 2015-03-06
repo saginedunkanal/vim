@@ -22,7 +22,8 @@ syntax on
 " Enable file type detection and do language-dependent indenting
 filetype plugin indent on
 
-:set autoread
+" Show line numbers
+:set number
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keyboard shortcuts
