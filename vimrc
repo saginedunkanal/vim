@@ -1,29 +1,37 @@
-" A minimal vimrc for new vim users to start with.
-"
-" Referenced here: http://www.benorenstein.com/blog/your-first-vimrc-should-be-nearly-empty/
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Sections
+"   - General
+"   - Keyboard shortcuts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Original Author:	 Bram Moolenaar <Bram@vim.org>
-" Made more minimal by:  Ben Orenstein
-" Last change:	         2012 Jan 20
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"
-"  If you don't understand a setting in here, just type ':h setting'.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
+" Use Vim settings rather than Vi settings (much better!).
+" This must be first because it changes other options as a side effect.
 set nocompatible
 
-" Make backspace behave in a sane manner.
+" Make backspace behave in a sane manner
 set backspace=indent,eol,start
 
 " Switch syntax highlighting on
 syntax on
 
-" Enable file type detection and do language-dependent indenting.
+" Enable file type detection and do language-dependent indenting
 filetype plugin indent on
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keyboard shortcuts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Save with Ctrl+S
+" For Ctrl+S to work, place these two commands in your ~/.bash_profile
+"bind -r '\C-s'
+"stty -ixon
+
+:nmap <C-s> :w<CR>
+:imap <C-s> <Esc>:w<CR>a
 
 " Enabling the next line will show in the terminal that my .vimrc was loaded
 "echo "My .vimrc loaded"
