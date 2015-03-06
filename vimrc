@@ -32,6 +32,9 @@ set hidden
 " http://github.com/tpope/vim-vividchalk 
 colorscheme vividchalk
 
+" Automatically use the current file's directory as the working directory
+set autochdir
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keyboard shortcuts
