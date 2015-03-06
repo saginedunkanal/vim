@@ -26,6 +26,7 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Save with Ctrl+S
+" http://stackoverflow.com/a/11298171/33311
 " For Ctrl+S to work, place these two commands in your ~/.bash_profile
 "bind -r '\C-s'
 "stty -ixon
