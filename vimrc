@@ -24,3 +24,6 @@ syntax on
 
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
+
+" Enabling the next line will show in the terminal that my .vimrc was loaded
+"echo "My .vimrc loaded"
