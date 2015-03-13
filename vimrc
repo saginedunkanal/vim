@@ -29,7 +29,7 @@ set number
 set hidden
 
 " Enable Time Pope's vividchalk colorscheme
-" http://github.com/tpope/vim-vividchalk 
+" http://github.com/tpope/vim-vividchalk
 colorscheme vividchalk
 
 " Automatically use the current file's directory as the working directory
@@ -67,6 +67,8 @@ set autochdir
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Automatically reload file when it was changed outside of Vim
+"
+" Uncomment the last two lines of this block to enable the script
 "
 " http://vim.wikia.com/wiki/Have_Vim_check_automatically_if_the_file_has_changed_externally
 "
@@ -246,6 +248,6 @@ function! WatchForChanges(bufname, ...)
 endfunction
 
 
-let autoreadargs={'autoread':1}
-execute WatchForChanges("*",autoreadargs)
+"let autoreadargs={'autoread':1}
+"execute WatchForChanges("*",autoreadargs)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
